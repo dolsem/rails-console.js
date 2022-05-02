@@ -1,0 +1,15 @@
+# source dir
+src
+
+# config files and dirs
+.github
+.vscode
+.history
+tsconfig.json
+tsconfig.npm.json
+
+# ignore the .ts files
+*.ts
+
+# include the .d.ts files
+!*.d.ts

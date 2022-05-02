@@ -1,0 +1,41 @@
+{
+  "name": "rails-console",
+  "version": "0.2.0",
+  "licence": "MIT",
+  "author": {
+    "name": "Denis Olsem",
+    "email": "dols3m@gmail.com"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/cjs/index.d.ts",
+  "esnext": "dist/esm/index.mjs",
+  "description": "Rails interface in Node.js via Rails console",
+  "keywords": [
+    "ruby", "ruby-on-rails", "nodejs"
+  ],
+  "scripts": {
+    "changelog": "standard-changelog",
+    "clean": "rimraf dist",
+    "lint": "eslint -c ./.eslintrc.json src/**/*.ts --fix",
+    "prepublishOnly": "rimraf dist && rollup -c ./rollup.config.js",
+    "upgrade-interactive": "npm-check --update"
+  },
+  "homepage": "https://github.com/dolsem/rails-console.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolsem/rails-console.js.git"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "npm-check": "^5.9.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "standard-changelog": "^2.0.27",
+    "typescript": "^4.2.3"
+  }
+}
